@@ -1,0 +1,45 @@
+body {
+		background: #A5DEE4;
+		line-height: 150%;
+		font: caption;
+		margin: 0;
+	}
+	   .nav {
+        background-color: #305A56;
+        color:#FCFAF2;
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 1px;
+            }
+    .nav li {
+        display: inline-block;
+        font-size: 20px;
+        padding: 20px;
+        margin: 0;
+    }
+body:lang(TWN) {
+	font: caption;
+}
+
+body:lang(CMN) {
+		// <uniquifier>: Use a unique and descriptive class name
+		// <weight>: Use a value from 100 to 900
+		
+		.noto-sans tc-<uniquifier> {
+  			font-family: "Noto Sans TC", sans-serif;
+  			font-optical-sizing: auto;
+  			font-weight: <weight>;
+  			font-style: normal;
+		}
+}
+body:lang(ENG) {}
+h1 {
+	color: #080808;
+	font-weight: bolder;
+	font-size: 32px;
+}
+p {
+	color: #1C1C1C;
+	font-size: 16px;
+}
