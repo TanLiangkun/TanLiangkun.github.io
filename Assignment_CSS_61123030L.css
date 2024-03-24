@@ -1,25 +1,19 @@
 body {
-		background: #A5DEE4;
+		background: #C5E9ED;
 		line-height: 150%;
 		font: caption;
 		margin: 0;
 	}
-	   .nav {
-        background-color: #305A56;
-        color:#FCFAF2;
-        list-style-type: none;
-        text-align: center;
-        margin: 0;
-        padding: 1px;
-            }
-    .nav li {
-        display: inline-block;
-        font-size: 20px;
-        padding: 20px;
-        margin: 0;
-    }
 body:lang(TWN) {
-	font: caption;
+		// <uniquifier>: Use a unique and descriptive class name
+		// <weight>: Use a value from 100 to 900
+		
+		.noto-sans tc-<uniquifier> {
+  			font-family: "Noto Sans TC", sans-serif;
+  			font-optical-sizing: auto;
+  			font-weight: <weight>;
+  			font-style: normal;
+		}
 }
 
 body:lang(CMN) {
@@ -33,13 +27,58 @@ body:lang(CMN) {
   			font-style: normal;
 		}
 }
-body:lang(ENG) {}
+body:lang(ENG) {
+
+		// <uniquifier>: Use a unique and descriptive class name
+		// <weight>: Use a value from 100 to 900
+		
+		.noto-sans tc-<uniquifier> {
+  			font-family: "Noto Sans TC", sans-serif;
+  			font-optical-sizing: auto;
+  			font-weight: <weight>;
+  			font-style: normal;
+		}
+}
 h1 {
 	color: #080808;
 	font-weight: bolder;
-	font-size: 32px;
+	font-size: 200%;
 }
 p {
 	color: #1C1C1C;
-	font-size: 16px;
+	font-size: 100%;
 }
+ul.a {
+        list-style-type: none;
+        margin: 0;
+        padding: 0; 
+        overflow: hidden;
+        background-color: #305A56;
+        width: 100%;
+
+    }
+
+    li.a {
+        float: left;
+    }
+
+    li.a a {
+        display: block;
+        color: #FCFAF2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li.a a:hover:not(.active) {
+        background-color: #C5E9ED;
+        color: #305A56;
+    }
+
+    .active {
+        background-color: #04AA6D;
+    }
+    il {
+        list-style-type: circle;
+        
+    }
