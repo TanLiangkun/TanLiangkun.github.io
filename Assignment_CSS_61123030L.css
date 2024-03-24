@@ -55,13 +55,10 @@ ul.a {
         overflow: hidden;
         background-color: #305A56;
         width: 100%;
-
     }
-
     li.a {
         float: left;
     }
-
     li.a a {
         display: block;
         color: #FCFAF2;
@@ -69,16 +66,13 @@ ul.a {
         padding: 14px 16px;
         text-decoration: none;
     }
-
     li.a a:hover:not(.active) {
         background-color: #C5E9ED;
         color: #305A56;
     }
-
     .active {
         background-color: #04AA6D;
     }
     il {
         list-style-type: circle;
-        
     }
