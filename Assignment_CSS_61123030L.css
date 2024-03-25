@@ -76,3 +76,15 @@ ul.a {
     il {
         list-style-type: circle;
     }
+ 	@media screen and (max-width: 800px) {
+
+        .a {
+            width: 100%;
+            padding: 0;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .a {
+            float: none;
+            width: 100%;
+        }
