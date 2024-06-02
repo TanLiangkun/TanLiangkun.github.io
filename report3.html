@@ -5,16 +5,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="TakaoTako.ico">
 	<link rel="stylesheet" type="text/css" href="Assignment_CSS_61123030L.css">
-    <title>立委星座總數｜周敬雯‧李語濡‧陳亮均</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
- </head>
+	<title>歷屆立委星座｜周敬雯‧李語濡‧陳亮均</title>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
 <body lang="CMN">
+
 	<div style="background: #305A56; padding-left: 8%; padding-right: 8%; margin: 0; border: 0;position: sticky; top: 0;">
 	<table>
 		<tr>
 			<td align="left" style="width: 1%; padding: 1%;"><a href="index.html"><img width="50px" height="50px" align="left" src="TakaoTako.png"></a></td>
 			<td align="left" style="width: 50%">
-				<h1 style="color: #FCFAF2;padding: 0.25em;"><a href="index.html" style="color: #FCFAF2; text-decoration: none;">周敬雯‧李語濡‧陳亮均</a>｜期末報告：立委年齡（2008–2024）</h1>
+				<h1 style="color: #FCFAF2;padding: 0.25em;"><a href="index.html" style="color: #FCFAF2; text-decoration: none;">周敬雯‧李語濡‧陳亮均</a>｜期末報告：歷屆立委星座（2008–2024）</h1>
 			<td style="width: 1.25%"><a href="https://www.facebook.com/liangchunia" target="_blank"><img width="75%" height="75%" src="Facebook_PPT_tr.png"></a></td>
 			<td style="width: 1.25%"><a href="https://www.instagram.com/liangchunia/" target="_blank"><img width="75%" height="75%" src="Instagram_PPT_tr.png"></a></td>
 			<td style="width: 1.25%"><a href="https://medium.com/@TanLiangkun" target="_blank"><img width="75%" height="75%" src="Medium_PPT_tr.png"></a></td>
@@ -32,49 +34,87 @@
 	        <li class="a"><a href="others.html">有的沒的</a></li>
     </ul class="a">
 	</div>
-	<div>
-		
-	</div>
+
 	<div style="padding: 1%; margin-left: 8%; margin-right: 8%; border: 0; position: static;">
-		<h1 style="line-height: 200%;" align="left">歷屆立委年齡（2008–2024）</h1>
+		<h1 style="line-height: 200%;" align="left">歷屆立委星座（2008–2024）</h1>
 			<il align="left" style="font-size: 150%;">
 			<li>說明說明</li>
 			<li>說明說明</li>
 	</div>
-	<div style="width: 800px; padding: 1%; margin-left: 8%; margin-right: 8%; border: 0; position: static;">
-        <canvas id="myChart"></canvas>
-    </div>
-    <script>
-    const ctx = document.getElementById('myChart');
 
-    new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces'],
-            datasets: [{
-                label: 'All Winning Legislators',
-                data: [19, 29, 24, 19, 27, 23, 37, 21, 25, 42, 22, 29],
-                borderWidth: 1
-            }],
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true,
-                }
-            }
-        }
-    });
-    </script>
+	<div style="width: 800px; padding: 1%; margin-left: 8%; margin-right: 8%; border: 0; position: static;">
+		<canvas id="myChart"></canvas>
+	</div>
+
+	<script>
+	const ctx = document.getElementById('myChart');
+
+	Chart.defaults.font.size = 24;
+	Chart.defaults.borderColor = '#7F7F7F';
+	Chart.defaults.color = '#404040';
+	Chart.defaults.elements.line.borderWidth = 5;
+	new Chart(ctx, {
+		type: 'bar',
+		data: {
+			labels: ['牡羊座', '金牛座', '雙子座', '巨蟹座', '獅子座', '處女座', '天秤座', '天蠍座', '射手座', '魔羯座', '水瓶座', '雙魚座'],
+			datasets: [{
+				label: '第7屆立委當選人（2008）',
+				borderColor: '#E16B8C',
+				backgroundColor: '#E16B8C',
+				data: [5, 10, 8, 7, 9, 11, 11, 6, 8, 18, 9, 10],
+				borderWidth: 1
+			}, {
+				label: '第8屆立委當選人（2012）',
+				borderColor: '#FAD689',
+				backgroundColor: '#FAD689',
+				data: [6, 9, 9, 7, 10, 9, 13, 2, 14, 15, 9, 9],
+				borderWidth: 1
+			}, {
+				label: '第9屆立委當選人（2016）',
+				borderColor: '#A8D8B9',
+				backgroundColor: '#A8D8B9',
+				data: [5, 6, 11, 6, 11, 6, 12, 8, 10, 15, 10, 13],
+				borderWidth: 1
+			}, {
+				label: '第10屆立委當選人（2020）',
+				borderColor: '#7DB9DE',
+				backgroundColor: '#7DB9DE',
+				data: [5, 10, 9, 6, 8, 5, 14, 12, 10, 13, 7, 14],
+				borderWidth: 1
+			}, {
+				label: '第11屆立委當選人（2024）',
+				borderColor: '#B28FCE',
+				backgroundColor: '#B28FCE',
+				data: [9, 12, 10, 6, 11, 8, 15, 7, 10, 15, 0, 10],
+				borderWidth: 1
+			}],
+		},
+		options: {
+			scales: {
+				x: {
+					stacked: true
+				},
+				y: {
+					beginAtZero: true,
+					stacked: true
+				}
+			}
+		}
+	});
+	</script>
+
 	<div style="padding: 1%; margin-left: 8%; margin-right: 8%; border: 0; position: static;">
-		<h1 style="line-height: 200%;" align="left">期末報告｜命理地理學🤨臺灣立委當選人初探🤨（2008–2024））</h1>
+		<h1 style="line-height: 200%;" align="left">期末報告｜命理地理學：臺灣立委當選人初探（2008–2024）</h1>
 			<il align="left" style="font-size: 150%;">
 			<li><a href="report1.html" style="color: #1C1C1C;  text-decoration: none;">歷屆立委年齡</a></li>
-			<li><a href="report2.html" style="color: #1C1C1C;  text-decoration: none;">歷屆立委星座</a></li>
-			<li><a href="report3.html" style="color: #1C1C1C;  text-decoration: none;">立委星座總數</a></li>
+			<li><a href="report2.html" style="color: #1C1C1C;  text-decoration: none;">立委星座總數</a></li>
+			<li><a href="report3.html" style="color: #1C1C1C;  text-decoration: none;">歷屆立委星座</a></li>
 			<li><a href="report4.html" style="color: #1C1C1C;  text-decoration: none;">四象星座比例</a></li>
 	</div>
+
     <div style="background: #305A56; padding:0.1%;">
 		<p  lang="CMN" align="center"><span style="color: #C5E9ED">© 陳亮均 TÂN, Liāng-kun｜Email: TanLiangkun2000@gmail.com</span></p>
 	</div>
+	
 </body>
+</html>
