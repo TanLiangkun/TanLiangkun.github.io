@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="TakaoTako.ico">
+	<link rel="stylesheet" type="text/css" href="Assignment_CSS_61123030L.css">
+    <title>歷屆立委星座｜周敬雯‧李語濡‧陳亮均</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ </head>
+<body lang="CMN">
+	<div style="background: #305A56; padding-left: 8%; padding-right: 8%; margin: 0; border: 0;position: sticky; top: 0;">
+	<table>
+		<tr>
+			<td align="left" style="width: 1%; padding: 1%;"><a href="index.html"><img width="50px" height="50px" align="left" src="TakaoTako.png"></a></td>
+			<td align="left" style="width: 50%">
+				<h1 style="color: #FCFAF2;padding: 0.25em;"><a href="index.html" style="color: #FCFAF2; text-decoration: none;">周敬雯‧李語濡‧陳亮均</a>｜期末報告：立委年齡（2008–2024）</h1>
+			<td style="width: 1.25%"><a href="https://www.facebook.com/liangchunia" target="_blank"><img width="75%" height="75%" src="Facebook_PPT_tr.png"></a></td>
+			<td style="width: 1.25%"><a href="https://www.instagram.com/liangchunia/" target="_blank"><img width="75%" height="75%" src="Instagram_PPT_tr.png"></a></td>
+			<td style="width: 1.25%"><a href="https://medium.com/@TanLiangkun" target="_blank"><img width="75%" height="75%" src="Medium_PPT_tr.png"></a></td>
+			<td style="width: 1.25%"><a href="mailto:TanLiangkun2000@gmail.com" target="_blank"><img width="75%" height="75%" src="Email_PPT_tr.png"></a></td>
+			</td>
+		</tr>
+	</table>
+	<ul class="a" lang="CMN" style="font-size: 120%;">
+	        <li class="a"><a href="about.html">關於自己</a></li>
+	        <li class="a"><a href="profile.html">個人簡歷</a></li>
+	        <li class="a"><a href="presentation.html">著作發表</a></li>
+	        <li class="a"><a href="publicaffair.html">公共事務</a></li>
+	        <li class="a"><a href="studentpolitics.html">學生自治</a></li>
+	        <li class="a"><a href="activities.html">活動紀錄</a></li>
+	        <li class="a"><a href="others.html">有的沒的</a></li>
+    </ul class="a">
+	</div>
+	<div>
+		
+	</div>
+	<div style="padding: 1%; margin-left: 8%; margin-right: 8%; border: 0; position: static;">
+		<h1 style="line-height: 200%;" align="left">歷屆立委年齡（2008–2024）</h1>
+			<il align="left" style="font-size: 150%;">
+			<li>說明說明</li>
+			<li>說明說明</li>
+	</div>
+	<div style="width: 800px; padding: 1%; margin-left: 8%; margin-right: 8%; border: 0; position: static;"><canvas id="myChart"></canvas></div>
+    <script >
+    const ctx = document.getElementById('myChart');
+
+    Chart.defaults.font.size = 24;
+    Chart.defaults.borderColor = '#7F7F7F';
+    Chart.defaults.color = '#404040';
+    Chart.defaults.elements.point.radius = 5;
+    Chart.defaults.elements.point.hoverRadius = 10;
+    Chart.defaults.elements.point.pointStyle = 'circle';
+    Chart.defaults.elements.line.borderWidth = 5;
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: [
+                '2008',
+                '2012',
+                '2016',
+                '2020',
+                '2024'
+            ],
+            datasets: [{
+                label: '立委當選人年齡平均數',
+                borderColor: '#E16B8C',
+                backgroundColor: '#E16B8C',
+                data: [51.15, 51.57, 49.94, 52.39, 52.88],
+                hoverOffset: 3
+            }, {
+                label: '立委當選人年齡中位數',
+                borderColor: '#FAD689',
+                backgroundColor: '#FAD689',
+                data: [52, 52.5, 50, 53, 53],
+                hoverOffset: 3
+            }, {
+                label: '立委當選人最低年齡',
+                borderColor: '#7DB9DE',
+                backgroundColor: '#7DB9DE',
+                data: [27, 31, 27, 27, 30],
+                hoverOffset: 3
+            }]
+        },
+        options: {}
+    });
+    </script>
+	<div style="padding: 1%; margin-left: 8%; margin-right: 8%; border: 0; position: static;">
+		<h1 style="line-height: 200%;" align="left">期末報告｜命理地理學🤨臺灣立委當選人初探🤨（2008–2024））</h1>
+			<il align="left" style="font-size: 150%;">
+			<li><a href="report1.html" style="color: #1C1C1C;  text-decoration: none;">歷屆立委年齡</a></li>
+			<li><a href="report2.html" style="color: #1C1C1C;  text-decoration: none;">歷屆立委星座</a></li>
+			<li><a href="report3.html" style="color: #1C1C1C;  text-decoration: none;">立委星座總數</a></li>
+			<li><a href="report4.html" style="color: #1C1C1C;  text-decoration: none;">四象星座比例</a></li>
+	</div>
+    <div style="background: #305A56; padding:0.1%;">
+		<p  lang="CMN" align="center"><span style="color: #C5E9ED">© 陳亮均 TÂN, Liāng-kun｜Email: TanLiangkun2000@gmail.com</span></p>
+	</div>
+</body>
