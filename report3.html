@@ -41,48 +41,29 @@
 			<li>說明說明</li>
 			<li>說明說明</li>
 	</div>
-	<div style="width: 800px; padding: 1%; margin-left: 8%; margin-right: 8%; border: 0; position: static;"><canvas id="myChart"></canvas></div>
-    <script >
+	<div>
+        <canvas id="myChart"></canvas>
+    </div>
+    <script>
     const ctx = document.getElementById('myChart');
 
-    Chart.defaults.font.size = 24;
-    Chart.defaults.borderColor = '#7F7F7F';
-    Chart.defaults.color = '#404040';
-    Chart.defaults.elements.point.radius = 5;
-    Chart.defaults.elements.point.hoverRadius = 10;
-    Chart.defaults.elements.point.pointStyle = 'circle';
-    Chart.defaults.elements.line.borderWidth = 5;
     new Chart(ctx, {
-        type: 'line',
+        type: 'bar',
         data: {
-            labels: [
-                '2008',
-                '2012',
-                '2016',
-                '2020',
-                '2024'
-            ],
+            labels: ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces'],
             datasets: [{
-                label: '立委當選人年齡平均數',
-                borderColor: '#E16B8C',
-                backgroundColor: '#E16B8C',
-                data: [51.15, 51.57, 49.94, 52.39, 52.88],
-                hoverOffset: 3
-            }, {
-                label: '立委當選人年齡中位數',
-                borderColor: '#FAD689',
-                backgroundColor: '#FAD689',
-                data: [52, 52.5, 50, 53, 53],
-                hoverOffset: 3
-            }, {
-                label: '立委當選人最低年齡',
-                borderColor: '#7DB9DE',
-                backgroundColor: '#7DB9DE',
-                data: [27, 31, 27, 27, 30],
-                hoverOffset: 3
-            }]
+                label: 'All Winning Legislators',
+                data: [19, 29, 24, 19, 27, 23, 37, 21, 25, 42, 22, 29],
+                borderWidth: 1
+            }],
         },
-        options: {}
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                }
+            }
+        }
     });
     </script>
 	<div style="padding: 1%; margin-left: 8%; margin-right: 8%; border: 0; position: static;">
